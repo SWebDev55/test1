@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- css -->
     <link rel="stylesheet" href="./style.css">
-
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- Tailwindcss Framwork cdn -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link href="/dist/output.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <script src="./jquery-3.6.0.min.js"></script>
     
     <title>HOSTING</title>
 </head>
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <!-- header -->
     <header class="w-full main-menu bg-blue-900 px-0 py-0 shadow-md sticky top-0 z-10">
-        <nav class="max-w-7xl m-auto text-white flex items-center justify-between">
+        <nav class="max-w-7xl m-auto text-white flex items-center justify-between" id="desktop-nav">
             <div class="logo py-3 flex justify-between items-center" id="logo">
                 <a href="#" class="text-3xl font-bold">HOSTING</a>
                 <div class="open-menu" onclick="openNav()">
@@ -35,20 +38,20 @@
                     <i class="fa fa-times rounded bg-blue-800 p-1 w-full h-full item-center flex justify-center"></i>
                 </div>
                 <ul class="flex justify-center items-center">
-                    <li>
-                        <a href="#home" class="text-md hover:text-blue-300 font-bold p-4 font-medium"><i class="fa fa-home icon"></i>&nbsp;&nbsp;Home</a>
+                    <li class="active">
+                        <a href="#home" class="page-scroll text-md hover:text-blue-300 font-bold p-4 font-medium"><i class="fa fa-home icon"></i>&nbsp;&nbsp;Home</a>
                     </li>
                     <li>
-                        <a href="#service" class="text-md hover:text-blue-300 font-bold p-4 font-medium"><i class="fa-solid fa-server"></i>&nbsp;&nbsp;Service</a>
+                        <a href="#service" class="page-scroll text-md hover:text-blue-300 font-bold p-4 font-medium"><i class="fa-solid fa-server"></i>&nbsp;&nbsp;Service</a>
                     </li>
                     <li>                        
-                        <a href="#about" class="text-md hover:text-blue-300 font-bold p-4 font-medium"><i class="fa-solid fa-circle-exclamation"></i>&nbsp;&nbsp;About Us</a>
+                        <a href="#about" class="page-scroll text-md hover:text-blue-300 font-bold p-4 font-medium"><i class="fa-solid fa-circle-exclamation"></i>&nbsp;&nbsp;About Us</a>
                     </li>
                     <li>
-                        <a href="#client" class="text-md hover:text-blue-300 font-bold p-4 font-medium"><i class="fa-solid fa-building"></i>&nbsp;&nbsp;Client</a>
+                        <a href="#client" class="page-scroll text-md hover:text-blue-300 font-bold p-4 font-medium"><i class="fa-solid fa-building"></i>&nbsp;&nbsp;Client</a>
                     </li>
                     <li>
-                        <a href="#contact" class="text-md hover:text-blue-300 font-bold p-4 font-medium"><i class="fa-solid fa-message"></i>&nbsp;&nbsp;Contact</a>
+                        <a href="#contact" class="page-scroll text-md hover:text-blue-300 font-bold p-4 font-medium"><i class="fa-solid fa-message"></i>&nbsp;&nbsp;Contact</a>
                     </li>
                     <li>
                         <a href="#" class="text-md hover:text-blue-300 font-medium p-4"><i class="fas fa-globe"></i>&nbsp;&nbsp;Eng</a>
@@ -129,37 +132,37 @@
         </div>
         <div class="main-box row-start-1 max-w-7xl m-auto py-10">
             <div class="box grid grid-cols-12 gap-4 my-5">
-                <div class="box-detail ro-1 col-span-4 p-4 text-center shadow-md border ring-red-100 rounded-xl bg-white">
+                <div data-aos="flip-left" data-aos-duration="2000" class="box-detail ro-1 col-span-4 p-4 text-center shadow-md border ring-red-100 rounded-xl bg-white">
                     <img src="./img/icon/icon-4.png" alt="" class="m-auto">
                     <h6 class="text-2xl text-black font-bold p-5">Reseller Hosting</h6>
                     <p class="text-lg text-black p-5">You can't underrate the power of our excellent web hosting support team they are the The and are on hand to quickly.</p>
                     <a href="#" class="text-lg text-black font-bold p-5 hover:text-blue-600">Starting at: $9.99/mo <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="box-detail ro-2 col-span-4 p-4 text-center shadow-md border ring-red-100 rounded-xl bg-white">
+                <div data-aos="flip-up" data-aos-duration="2000" class="box-detail ro-2 col-span-4 p-4 text-center shadow-md border ring-red-100 rounded-xl bg-white">
                     <img src="./img/icon/icon-5.png" alt="" class="m-auto">
                     <h6 class="text-2xl text-black font-bold p-5">Cloud Hosting</h6>
                     <p class="text-lg text-black p-5">You can't underrate the power of our excellent web hosting support team they are the The and are on hand to quickly.</p>
                     <a href="#" class="text-lg text-black font-bold p-5 hover:text-blue-600">Starting at: $9.99/mo <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="box-detail ro-1 col-span-4 p-4 text-center shadow-md border ring-red-100 rounded-xl bg-white">
+                <div data-aos="flip-right" data-aos-duration="2000" class="box-detail ro-1 col-span-4 p-4 text-center shadow-md border ring-red-100 rounded-xl bg-white">
                     <img src="./img/icon/icon-6.png" alt="" class="m-auto">
                     <h6 class="text-2xl text-black font-bold p-5">Dedicated Hosting</h6>
                     <p class="text-lg text-black p-5">You can't underrate the power of our excellent web hosting support team they are the The and are on hand to quickly.</p>
                     <a href="#" class="text-lg text-black font-bold p-5 hover:text-blue-600">Starting at: $9.99/mo <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="box-detail ro-2 col-span-4 p-4 text-center shadow-md border ring-red-100 rounded-xl bg-white">
+                <div data-aos="flip-left" data-aos-duration="2000" class="box-detail ro-2 col-span-4 p-4 text-center shadow-md border ring-red-100 rounded-xl bg-white">
                     <img src="./img/icon/icon-1.png" alt="" class="m-auto">
                     <h6 class="text-2xl text-black font-bold p-5">Shared Hosting</h6>
                     <p class="text-lg text-black p-5">You can't underrate the power of our excellent web hosting support team they are the The and are on hand to quickly.</p>
                     <a href="#" class="text-lg text-black font-bold p-5 hover:text-blue-600">Starting at: $9.99/mo <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="box-detail ro-1 col-span-4 p-4 text-center shadow-md border ring-red-100 rounded-xl bg-white">
+                <div data-aos="flip-down" data-aos-duration="2000" class="box-detail ro-1 col-span-4 p-4 text-center shadow-md border ring-red-100 rounded-xl bg-white">
                     <img src="./img/icon/icon-2.png" alt="" class="m-auto">
                     <h6 class="text-2xl text-black font-bold p-5">WordPress Hosting</h6>
                     <p class="text-lg text-black p-5">You can't underrate the power of our excellent web hosting support team they are the The and are on hand to quickly.</p>
                     <a href="#" class="text-lg text-black font-bold p-5 hover:text-blue-600">Starting at: $9.99/mo <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div class="box-detail ro-2 col-span-4 p-4 text-center shadow-md border ring-red-100 rounded-xl bg-white">
+                <div data-aos="flip-right" data-aos-duration="2000" class="box-detail ro-2 col-span-4 p-4 text-center shadow-md border ring-red-100 rounded-xl bg-white">
                     <img src="./img/icon/icon-3.png" alt="" class="m-auto">
                     <h6 class="text-2xl text-black font-bold p-5">VPS Hosting</h6>
                     <p class="text-lg text-black p-5">You can't underrate the power of our excellent web hosting support team they are the The and are on hand to quickly.</p>
@@ -189,7 +192,7 @@
     <section class="detail-1 max-w-7xl m-auto py-10" id="about">
         <div class="row-start-1">
             <div class="main-box grid grid-cols-12 gap-4 my-5">
-                <div class="col-span-7 p-4">
+                <div class="col-span-7 p-4" data-aos="fade-up" data-aos-duration="3000">
                     <h6 class="text-left text-black font-bold text-4xl py-4">Level up Your Web Hosting with These Must-Haves.</h6>
                     <p class="text-left text-gray-600 text-lg py-4">Migrating your site can be stressful which is why we have a dedicated team Hostim free and easy migration service.</p>
                     <div class="box flex justify-between item-center py-3">
@@ -207,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-5 p-4">
+                <div class="col-span-5 p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <img src="./img/building.png" alt="">
                 </div>
             </div>
@@ -218,10 +221,10 @@
     <section class="detail-2 max-w-7xl m-auto py-10">
         <div class="row-start-1">
             <div class="main-box grid grid-cols-12 gap-4 my-5">
-                <div class="col-span-5 p-4">
+                <div class="col-span-5 p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <img src="./img/ft-1.png" alt="">
                 </div>
-                <div class="box-text col-span-7 p-4">
+                <div class="box-text col-span-7 p-4" data-aos="fade-up" data-aos-duration="3000">
                     <h6 class="text-left text-black font-bold text-4xl py-4">Advance features for the advanced user:</h6>
                     <div class="flex justify-between item-center py-4 border-b">
                         <a href="#" class="text-center text-md text-black font-bold">Automatic Backups</a>
@@ -261,17 +264,17 @@
     <section class="client m-auto max-w-7xl py-10" id="client">
         <div class="row-start-1">
             <div class="main-box grid grid-cols-12 gap-4 my-5">
-                <div class="box col-span-4 px-12 py-5 shadow border rounded-xl">
+                <div class="box col-span-4 px-12 py-5 shadow border rounded-xl" data-aos-duration="1000" data-aos="fade-left">
                     <img src="./img/google.png" alt="">
                     <h6 class="text-right text-3xl font-bold">4.5/5</h6>
                     <img src="./img/star-yellow.svg" alt="">
                 </div>
-                <div class="box col-span-4 px-12 py-5 shadow border rounded-xl">
+                <div class="box col-span-4 px-12 py-5 shadow border rounded-xl" data-aos-duration="1000" data-aos="fade-down">
                     <img src="./img/trust-pilot-logo-black.png" alt="">
                     <h6 class="text-right text-3xl font-bold">4.5/5</h6>
                     <img src="./img/five-star.svg" alt="">
                 </div>
-                <div class="box col-span-4 px-12 py-5 shadow border rounded-xl">
+                <div class="box col-span-4 px-12 py-5 shadow border rounded-xl" data-aos-duration="1000" data-aos="fade-right">
                     <img src="./img/capterra.png" alt="">
                     <h6 class="text-right text-3xl font-bold">4.5/5</h6>
                     <img src="./img/star-yellow.svg" alt="">
@@ -354,5 +357,6 @@
         </div>
     </footer>
     <script src="./script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
