@@ -5,9 +5,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
-$(".page-scroll").click(function(){
-    $(".menu").hide();
-});
 
 // paralax scroll
 $(function() {
